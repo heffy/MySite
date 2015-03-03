@@ -18,6 +18,24 @@ add_theme_support( 'nav-menus' );
         
     }
 
+//Add Post Thumbnails
+add_theme_support('post-thumbnails');
+add_image_size('blog-post-thumb',340,200,true);
+
+
+
+
+
+function new_excerpt_more($more){
+    
+    global $post;
+    
+    return '<a href="'  .get_permalink($post->ID) .'" class="moreTag"> More..</a>';
+    
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 
 ?>
