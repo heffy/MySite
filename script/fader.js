@@ -1,10 +1,10 @@
 $(document).ready(function(){
     
     setTimeout(changeSecondPic, 3000);
-
+     var imagePath = "http://localhost/wordpress/wordpress/wp-content/themes/MySite/images";
      function changeFirstPic() {
          $("#fader").slideDown(2000,"swing")
-        $("#fader").slideDown(2000,"swing").attr("src","images/pond.jpg");
+        $("#fader").slideDown(2000,"swing").attr("src",imagePath +"/pond.jpg");
        
 
         setTimeout(changeSecondPic, 4000);
@@ -18,7 +18,7 @@ $(document).ready(function(){
         
        
            $("#fader").slideDown(2000,"swing");
-        $("#fader").slideDown(2000,"swing").attr("src","images/resevoir_cafe.jpg");
+        $("#fader").slideDown(2000,"swing").attr("src",imagePath +"/resevoir_cafe.jpg");
     
 
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
     function changeThirdPic() {
         
         $("#fader").slideDown(2000,"swing");
-        $("#fader").slideDown(2000,"swing").attr("src","images/roll.jpg");
+        $("#fader").slideDown(2000,"swing").attr("src",imagePath + "/roll.jpg");
         
 
         setTimeout(changeFourthPic, 4000);
@@ -40,7 +40,7 @@ $(document).ready(function(){
     function changeFourthPic() {
         
         $("#fader").slideDown(2000,"swing");
-        $("#fader").slideDown(2000,"swing").attr("src","images/building.jpg");
+        $("#fader").slideDown(2000,"swing").attr("src",imagePath + "/building.jpg");
         
 
         setTimeout(changeFirstPic, 4000);
