@@ -2,12 +2,9 @@
         
             <footer class="col-lg-12"> 
                 
-                 <ul>
-                     <li><a href="index.php">Home</a></li>
-                     <li><a href="about.php">About</a></li>
-                     <li><a href="tutorials.php">Tutorials</a></li>
-                     <li><a href="contact.php">Contact</a></li>
-                </ul>
+                <?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav')); ?>
+
+                
         	   <span class="glyphicon glyphicon-copyright-mark" style="float:left;">2015</span>
             </footer>
         
